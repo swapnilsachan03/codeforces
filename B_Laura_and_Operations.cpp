@@ -30,5 +30,6 @@ int main()
       cout << 0 << " " << 0 << " " << 1 << endl;
     }
   }
+
   return 0;
 }
