@@ -17,19 +17,16 @@ int main()
     }
 
     sort(nums.begin(), nums.end());
+    nums.resize(unique(nums.begin(), nums.end()) - nums.begin());
 
-    bool ans = false;
+    int idx = 0, ans = 0;
 
-    if (nums[0] != nums[1]) ans = true;
-
-    else {
-      for (int i = 1; i < n; i++) {
-        if (nums[i] % nums[0] != 0) ans = true;
-      }
+    for (int i = 0; i < nums.size(); i++) {
+      while (nums[i] - nums[idx] >= n) idx += 1;
+      ans = max(ans, i - idx + 1);
     }
 
-    if (ans) cout << "YES" << endl;
-    else cout << "NO" << endl;
+    cout << ans << endl;
   }
 
   return 0;
