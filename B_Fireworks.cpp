@@ -15,7 +15,7 @@ int main()
     long long a, b, m;
     cin >> a >> b >> m;
 
-    cout << ((a + m) / a) + ((b + m) / b) << endl;
+    cout << (m / a) + (m / b) + 2 << endl;
   }
 
   return 0;
