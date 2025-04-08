@@ -1,4 +1,4 @@
-# Swapnil's CP-31 solutions
+# Swapnil's Codeforces solutions
 
 This repository contains solutions to all the contests that I solve on Codeforces, you can refer these for your understanding. The solutions are implemented in C++.
 
